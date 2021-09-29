@@ -1,5 +1,7 @@
 package negocio;
 
+import java.util.List;
+
 public class GerenciadoraContas {
     private List<ContaCorrente> contasDoBanco;
 
@@ -94,11 +96,11 @@ public class GerenciadoraContas {
         ContaCorrente contaOrigem = pesquisaConta(idContaOrigem);
         ContaCorrente contaDestino = pesquisaConta(idContaDestino);
 
-//		if(contaOrigem.getSaldo() >= valor){
-        contaDestino.setSaldo(contaDestino.getSaldo() + valor);
-        contaOrigem.setSaldo(contaOrigem.getSaldo() - valor);
-        sucesso = true;
-//		}
+		if(contaOrigem.getSaldo() >= valor){
+            contaDestino.setSaldo(contaDestino.getSaldo() + valor);
+            contaOrigem.setSaldo(contaOrigem.getSaldo() - valor);
+            sucesso = true;
+		}
 
         return sucesso;
     }
