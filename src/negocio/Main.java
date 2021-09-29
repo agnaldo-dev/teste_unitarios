@@ -1,5 +1,9 @@
 package negocio;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class Main {
     static GerenciadoraClientes gerClientes;
     static GerenciadoraContas gerContas;

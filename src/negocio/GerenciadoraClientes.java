@@ -1,5 +1,7 @@
 package negocio;
 
+import java.util.List;
+
 public class GerenciadoraClientes {
     private List<Cliente> clientesDoBanco;
 
